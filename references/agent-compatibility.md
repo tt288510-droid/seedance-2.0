@@ -17,8 +17,10 @@ This repository follows that pattern:
 | Dense reference material | `references/*.md` | Present |
 | Validation and maintenance scripts | `scripts/*.py` | Present |
 | README-facing visual resources | `assets/*` | Present |
+| Codex UI metadata | `agents/openai.yaml` | Present |
 | Behavioral evals | `evals/evals.json` | Present |
 | CI validation | `.github/workflows/validate-skills.yml` | Present |
+| Local Codex installer | `scripts/install_codex_skill.py` | Present |
 
 ## Compatibility Rules
 
@@ -26,6 +28,8 @@ This repository follows that pattern:
 - Keep the root `SKILL.md` small. Route to sub-skills and references instead of copying long tables into the root.
 - Keep volatile facts in dated references such as `api-status.md` and `source-registry.md`.
 - Keep generated bitmap images inside `assets/` if they are referenced by README.
+- Keep `agents/openai.yaml` aligned with the root skill name and make the default prompt invoke `$seedance-20`.
+- Use `scripts/install_codex_skill.py --force` to install or refresh the local user-level Codex copy at `$CODEX_HOME/skills/seedance-20` or `~/.codex/skills/seedance-20`.
 - Keep scripts deterministic and local. They should validate structure, schema, design, and source metadata without requiring private credentials.
 - Do not store API keys, account cookies, or private prompt corpora in the skill package.
 

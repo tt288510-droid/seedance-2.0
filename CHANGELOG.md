@@ -9,10 +9,12 @@ All notable changes to this project are documented here.
 - Added seven generated visual-gallery assets: two cinematic hero shots and five text-rich infographics for skill capabilities, CDN delivery, reference roles, production delivery, and QC.
 - Added README visual-gallery coverage so the front page shows the skill as a professional filmmaker operating system instead of a single generic image.
 - Added eval coverage for the six-plus-image visual-gallery requirement.
+- Added Codex UI metadata at `agents/openai.yaml` and a local installer at `scripts/install_codex_skill.py`.
 
 ### Changed
 
 - Updated the README hero, badges, design standard, frontend redesign notes, and frontend design-system rules for text-rich infographic assets.
+- Updated install guidance so the repo can be installed into `$CODEX_HOME/skills/seedance-20` or `~/.codex/skills/seedance-20` for direct Codex use.
 - Strengthened `scripts/design_audit.py` to require the visual gallery, validate PNG headers, enforce minimum dimensions, and fail stale visual guidance.
 - Bumped active skill metadata, validator expectations, and eval metadata to v5.4.5.
 

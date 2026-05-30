@@ -227,6 +227,14 @@ Client support for Agent Skills is still tool-specific. Codex documents a skill 
 
 Codex scans `.agents/skills` locations from the working directory upward, plus user/admin/system skill locations. A repository root with `SKILL.md` is shaped like a skill folder, but it still needs to be installed/copied under a scanned skills directory or distributed as a plugin for automatic discovery.
 
+This repository now includes `agents/openai.yaml` and a local Codex installer. To install it for this Windows workstation or any local Codex profile, run:
+
+```bash
+python scripts/install_codex_skill.py --force
+```
+
+The installer copies the repository into `$CODEX_HOME/skills/seedance-20` when `CODEX_HOME` is set, otherwise into `~/.codex/skills/seedance-20`. Restart Codex after installation so `$seedance-20` appears in the available skills list.
+
 This repository keeps dense facts in references so the active skill stays small.
 
 If your client supports installing a skill directly from a GitHub repository, use this repository URL:

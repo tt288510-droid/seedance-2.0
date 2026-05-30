@@ -69,9 +69,11 @@ REQUIRED_FILES = [
     "scripts/content_audit.py",
     "scripts/eval_schema_check.py",
     "scripts/design_audit.py",
+    "scripts/install_codex_skill.py",
     "scripts/source_registry_check.py",
     "scripts/vocab_schema_check.py",
     ".github/workflows/validate-skills.yml",
+    "agents/openai.yaml",
     "evals/evals.json",
     "data/sources.seedance-2026-05-30.json",
     "data/community-patterns.seedance-2026-05-30.json",
@@ -233,6 +235,7 @@ def main() -> int:
         "scripts/content_audit.py",
         "scripts/eval_schema_check.py",
         "scripts/design_audit.py",
+        "scripts/install_codex_skill.py",
         "scripts/source_registry_check.py",
         "scripts/vocab_schema_check.py",
     ]:
@@ -241,6 +244,18 @@ def main() -> int:
             line_count = len(path.read_text(encoding="utf-8").splitlines())
             if line_count < 20:
                 errors.append(f"{rel}: script appears collapsed or incomplete ({line_count} lines)")
+
+    openai_yaml = root / "agents" / "openai.yaml"
+    if openai_yaml.exists():
+        yaml_text = openai_yaml.read_text(encoding="utf-8")
+        for required in [
+            'display_name: "Seedance 2.0 Skill OS"',
+            'short_description: "Professional Seedance video prompting"',
+            'default_prompt: "Use $seedance-20',
+            "allow_implicit_invocation: true",
+        ]:
+            if required not in yaml_text:
+                errors.append(f"agents/openai.yaml missing `{required}`")
 
     if warnings:
         print("WARNINGS:")
