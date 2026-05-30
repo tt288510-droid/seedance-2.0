@@ -404,6 +404,96 @@
       "volatile_fields": ["prompt_count", "license", "safety"],
       "repo_actions": ["classify safety before import", "extract structures and vocabulary rather than copying prompts"],
       "do_not_use_for": ["unsafe examples", "IP/brand/public-figure imitation"]
+    },
+    {
+      "id": "localized-ja-seedance-guide-2026-05",
+      "title": "Seedance 2.0 Japanese Usage and Prompt Tips",
+      "url": "https://www.seedance.tv/ja/blog/seedance-2-0",
+      "language": "ja",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-03",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Japanese guide emphasizes prompt, generate, review, refine workflow",
+        "Japanese guidance highlights low-angle shots, slow dolly movement, and handheld camera feel as useful camera language"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Japanese community-informed examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-ko-seedance-manual-2026-05",
+      "title": "Korean Seedance 2.0 Prompt Manual",
+      "url": "https://seedance22.com/ko/guide/seedance-2-0-prompt-manual/",
+      "language": "ko",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-03",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Korean guide reinforces explicit action, effect, camera, character, scene, and sound wording",
+        "Korean examples commonly benefit from stable framing for dialogue and micro-expression"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Korean dialogue and melodrama examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-es-seedance-guide-2026-05",
+      "title": "Spanish Seedance 2.0 Prompt Guide",
+      "url": "https://seedance2.ai/es/guide",
+      "language": "es",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Spanish guide emphasizes clear reference roles such as composition from Imagen 1 and action from Video 2",
+        "Spanish examples support role-map and product-preservation wording"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Spanish role-map examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-ru-seedance-guide-2026-05",
+      "title": "Russian Seedance 2.0 Prompt Guide",
+      "url": "https://seedance2.ai/ru/guide",
+      "language": "ru",
+      "source_type": "localized_community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": null,
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "Russian guide emphasizes explicit image, audio, and video references",
+        "Russian wording supports structured prompt sections and role-map constraints"
+      ],
+      "volatile_fields": ["example_quality", "surface_behavior"],
+      "repo_actions": ["add Russian structured examples", "keep examples original"],
+      "do_not_use_for": ["official API limits", "policy guarantees"]
+    },
+    {
+      "id": "localized-multilingual-code-mix-guide-2026-05",
+      "title": "Seedance 2.0 Multilingual Prompting and Code-Mixed Practice",
+      "url": "https://seedance2.so/blog/seedance-2-prompts-guide",
+      "language": "multi",
+      "source_type": "community_guide",
+      "retrieved_at": "2026-05-30",
+      "published_or_updated": "2026-05",
+      "confidence": "medium",
+      "surfaces": ["community", "prompting"],
+      "claims": [
+        "community guides discuss multilingual prompting and mixed technical vocabulary",
+        "repo should treat code-mixing as clarity guidance, not official behavior or safety evasion"
+      ],
+      "volatile_fields": ["language_support", "example_quality", "surface_behavior"],
+      "repo_actions": ["add safe mixed-language repair boundary", "add multilingual examples"],
+      "do_not_use_for": ["official language support list", "filter behavior guarantees"]
     }
   ]
 }

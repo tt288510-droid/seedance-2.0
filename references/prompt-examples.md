@@ -127,3 +127,33 @@ Use these examples as patterns, not fixed scripts. Preserve reference tags exact
 **Mode:** R2V. **Why it works:** image, video, and audio references are separated into safe roles.
 
 `[Image1] задает оригинального персонажа и костюм. [Video1] задает только ритм бокового сопровождения камеры; не копировать людей, место, бренды или узнаваемую сцену. [Audio1] задает только темп и настроение. Персонаж идет по мокрой вечерней улице, останавливается под фонарем и оборачивается. Камера: плавное боковое сопровождение, затем фиксированный средний план. Звук: дождь, шаги, без музыки.`
+
+## Chinese-English Mixed Role Map
+
+**Mode:** R2V. **Why it works:** Chinese binds references compactly while English keeps shared camera terms precise.
+
+`@图1锁定原创角色身份与服装；@图2仅参考雨夜街道氛围；@视频1仅参考 slow lateral tracking，不复制人物、地点或品牌。原创角色穿过湿润站台，停在一盏闪烁灯下。Camera: locked medium-wide, 35mm lens, one slow side track. Sound: rain, footsteps, no music.`
+
+## Japanese-English Portrait Control
+
+**Mode:** I2V. **Why it works:** Japanese gives natural performance language while English locks camera behavior.
+
+`[Image1]の人物の顔、髪型、衣装、背景構図を保持。動きは小さく：一度まばたきし、視線を少し下げ、最後に控えめに微笑む。Camera: locked medium close-up, no reframing. Lighting: soft window light from frame right. Sound: quiet room tone.`
+
+## Korean-English Melodrama Blocking
+
+**Mode:** T2V. **Why it works:** character spacing, emotional micro-action, and sound are separated.
+
+`현대 아파트 주방, two original adult characters only. Character A lowers a ceramic mug and looks away; Character B stays near the window, no approach. Camera: locked medium-wide, subtle handheld breathing sway. Lighting: warm tungsten practical, faint blue city spill. Sound: refrigerator hum, fabric movement, no music.`
+
+## Spanish-English Product Preservation
+
+**Mode:** I2V. **Why it works:** Spanish preservation wording is paired with a simple English camera command.
+
+`[Image1] es la referencia del producto; conservar forma, etiqueta, logo y color sin cambios. Solo cambia el ambiente: una luz cálida cruza el vidrio y aparecen gotas pequeñas. Camera: slow slider from left to right, locked product scale. Sound: room tone, soft glass tap at the end.`
+
+## Multilingual False-Positive Repair
+
+**Mode:** T2V repair. **Why it works:** it clarifies a safe staged scene instead of hiding risky intent.
+
+`原创成年角色进行 staged confrontation，非写实伤害、无血腥、无真实武器。Action: one choreographed step backward, a table prop slides, the character freezes at the doorway. Camera: locked medium shot. Lighting: low warm practical, blue window rim. Sound: chair scrape, breath, silence after.`

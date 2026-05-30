@@ -33,3 +33,27 @@ Use these as safe structures, not fixed scripts. They are original examples and 
 ## Extension Quality Repair
 
 `Use the returned last frame from the previous clip as the new first frame. Preserve character, wardrobe, light direction, and camera angle. Continue only one action: smoke thins around the doorway and the character lowers the lantern. No new scene, no new camera move, no extra VFX.`
+
+## Multilingual Community-Informed Examples
+
+These examples are original structures distilled from public multilingual practice. They do not copy community prompt text.
+
+### Chinese-English R2V
+
+`@图1锁定原创角色身份与服装；@视频1仅参考 camera rhythm，不复制人物、地点或品牌；@音频1仅参考节奏。Original courier walks across a wet train platform, stops under one flickering sign, and turns left on the final beat. Camera: 35mm locked medium-wide, one slow side track. Sound: rain, footsteps, no music.`
+
+### Japanese I2V
+
+`[Image1]の人物の顔、髪型、衣装、背景構図を保持。動きは小さく、まばたき一回、視線を少し下げるだけ。Camera: locked medium close-up, no reframing. Lighting: soft window light. Sound: quiet room tone.`
+
+### Korean Dialogue
+
+`현대 카페, Character A sits still in a locked medium close-up and says, "괜찮아, 천천히 말해." Keep mouth movement small, no head turn during dialogue, no music under the line. Sound: cafe room tone and a soft cup tap at the end.`
+
+### Spanish Product
+
+`[Image1] es la referencia del producto; conservar forma, etiqueta, logo y color sin cambios. Solo cambia la luz: una franja cálida cruza el vidrio y las gotas bajan lentamente. Camera: locked product shot with slow push-in.`
+
+### Russian Safe Suspense
+
+`Постановочная сцена напряжения без графики: взрослый оригинальный персонаж отступает от закрытой двери, роняет ключи и замирает. Camera: locked medium shot. Lighting: warm practical plus blue window rim. Sound: key drop, breath, no music.`

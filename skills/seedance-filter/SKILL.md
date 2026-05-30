@@ -8,7 +8,7 @@ tags:
   - safe-rewrite
   - seedance-20
 metadata:
-  version: "5.4.2"
+  version: "5.4.3"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -28,7 +28,7 @@ Use this when a prompt is blocked, degraded, likely to trigger moderation, or ne
 2. Identify risky surface wording: graphic harm, protected identity, sexualized framing, real-person likeness, weapons, self-harm, hate, evasion language, or exact IP copying.
 3. Replace risky terms with professional, non-graphic, production-context language.
 4. Preserve composition, action, mood, camera logic, and authorized references.
-5. Do not help bypass safety systems or provide evasion tactics.
+5. For likely false positives, clarify benign production context, ownership, and non-graphic intent. Do not help bypass safety systems or provide evasion tactics.
 
 ## Safer Rewrite Patterns
 
@@ -49,7 +49,7 @@ Do not provide filter-bypass, evasion, or hidden-word tactics. The safe path is 
 
 Face-limit or portrait-verification workarounds are not safe prompt tricks. If a surface offers sanctioned virtual portrait, trusted model-output, or authorization asset flows, route the user to those current official paths instead of evasion language.
 
-Load `[ref:filter-vocab]` for safer substitutions.
+Load `[ref:filter-vocab]` for safer substitutions. Load `[ref:multilingual-community-examples]` only when the safe repair needs Chinese/Russian/Japanese/Korean/Spanish or mixed-language wording for clarity.
 
 ## Output Contract
 

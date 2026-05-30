@@ -9,7 +9,7 @@ tags:
   - recipes
   - seedance-20
 metadata:
-  version: "5.4.2"
+  version: "5.4.3"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -23,7 +23,7 @@ metadata:
 
 Use recipes as starting patterns, not rigid prompt templates. Pick the recipe that matches the user's outcome, then customize subject, action, camera, lighting, audio, and constraints. Recipes should preserve the one-beat discipline of a short clip.
 
-Load `[ref:genre-guides]` for genre patterns and `[ref:examples-by-mode]` when the user needs copy-ready examples.
+Load `[ref:genre-guides]` for genre patterns, `[ref:examples-by-mode]` when the user needs copy-ready examples, and `[ref:multilingual-community-examples]` when the recipe should reflect Chinese/Russian/Japanese/Korean/Spanish community-style structures.
 
 ## Recipe Families
 

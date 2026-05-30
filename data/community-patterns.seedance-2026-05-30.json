@@ -132,6 +132,78 @@
       "risk_flags": ["real-person-risk", "bypass-risk"],
       "features": ["portrait verification", "liveness", "asset authorization", "unsupported workaround claims"],
       "safe_use": "Route to official authorization or virtual portrait assets; do not import workaround advice."
+    },
+    {
+      "id": "zh-en-role-camera-code-mix",
+      "label": "safe-structure-only",
+      "source_url": "https://seedance2.so/blog/seedance-2-prompts-guide",
+      "source_language": "multi",
+      "surface": "community guide",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["Chinese reference-role verbs", "English lens/camera terms", "explicit no-transfer constraints"],
+      "safe_use": "Use only to clarify benign role binding and camera direction; never as a safety workaround."
+    },
+    {
+      "id": "ja-camera-iteration-language",
+      "label": "safe-structure-only",
+      "source_url": "https://www.seedance.tv/ja/blog/seedance-2-0",
+      "source_language": "ja",
+      "surface": "localized guide",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["low-angle shot", "slow dolly zoom", "handheld camera feel", "iterate review refine"],
+      "safe_use": "Use for original Japanese examples and camera vocabulary."
+    },
+    {
+      "id": "ko-dialogue-melodrama-structure",
+      "label": "safe-structure-only",
+      "source_url": "https://seedance22.com/ko/guide/seedance-2-0-prompt-manual/",
+      "source_language": "ko",
+      "surface": "localized guide plus community examples",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["clear action/effect/camera/person/scene/sound sections", "short dialogue", "stable close-up"],
+      "safe_use": "Use for Korean dialogue and melodrama micro-expression examples."
+    },
+    {
+      "id": "es-reference-role-wording",
+      "label": "safe-structure-only",
+      "source_url": "https://seedance2.ai/es/guide",
+      "source_language": "es",
+      "surface": "localized guide",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["usar la composicion de Imagen 1", "seguir la accion de Video 2", "multimodal examples"],
+      "safe_use": "Use for Spanish role-map and product-preservation examples."
+    },
+    {
+      "id": "ru-reference-role-wording",
+      "label": "safe-structure-only",
+      "source_url": "https://seedance2.ai/ru/guide",
+      "source_language": "ru",
+      "surface": "localized guide",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": [],
+      "features": ["composition from Image 1", "action from Video 2", "image/audio/video reference wording"],
+      "safe_use": "Use for Russian role-map and structured prompt examples."
+    },
+    {
+      "id": "unsafe-viral-community-gallery",
+      "label": "safe-structure-only",
+      "source_url": "https://www.youware.com/seedance-2-0-prompts",
+      "source_language": "multi",
+      "surface": "public prompt gallery",
+      "claim_status": "field-observed",
+      "confidence": "medium",
+      "risk_flags": ["ip-risk", "brand-risk", "real-person-risk"],
+      "features": ["large raw prompt gallery", "mixed languages", "dialogue and audio blocks", "many unsafe identity or brand surfaces"],
+      "safe_use": "Classify and rewrite into original authorized examples; extract structure only."
     }
   ]
 }

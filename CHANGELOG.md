@@ -2,6 +2,22 @@
 
 All notable changes to this project are documented here.
 
+## [5.4.3] — 2026-05-30
+
+### Added
+
+- Added `assets/skill-map-cinematic.png` and replaced the README skill-map display with a generated cinematic bitmap infographic.
+- Added `references/multilingual-community-examples.md` with original Chinese-English, Russian-English, Japanese-English, Korean-English, and Spanish-English examples.
+- Added safe mixed-language false-positive repair guidance that clarifies benign production context without providing filter-evasion tactics.
+- Added eval coverage for multilingual false-positive repair and cinematic infographic/front-page requirements.
+
+### Changed
+
+- Replaced `assets/skill-os-infographic.png` with a more professional cinematic operating-system infographic.
+- Expanded prompt examples and mode examples with multilingual community-informed structures.
+- Updated community-pattern data with localized Japanese, Korean, Spanish, Russian, and mixed-language prompt-pattern records.
+- Updated design validation to require the generated skill-map bitmap alongside the hero and operating-system infographic.
+
 ## [5.4.2] — 2026-05-30
 
 ### Added

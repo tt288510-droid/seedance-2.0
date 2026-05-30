@@ -40,6 +40,8 @@ REQUIRED_IDS = {
     "community_gallery_safety_classification",
     "vfx_reference_video_repair",
     "extension_quality_degradation",
+    "multilingual_false_positive_repair",
+    "cinematic_infographic_front_page",
 }
 
 

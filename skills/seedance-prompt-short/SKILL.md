@@ -8,7 +8,7 @@ tags:
   - chinese-prompt
   - seedance-20
 metadata:
-  version: "5.4.2"
+  version: "5.4.3"
   updated: "2026-05-30"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
@@ -35,6 +35,8 @@ Preserve in this order:
 7. Safety, IP, or continuity constraint.
 
 Delete generic adjectives, duplicate style labels, obvious background details, secondary camera moves, and secondary actions before deleting preservation constraints.
+
+For bilingual or mixed-language compression, load `[ref:multilingual-community-examples]`. Keep only the language mix that clarifies reference roles, dialogue, camera terms, or safe production constraints.
 
 ## Compact Templates
 

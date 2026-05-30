@@ -1,6 +1,6 @@
 # Frontend Design System
 
-This repository has no application frontend. The user-facing frontend is the GitHub README plus SVG assets.
+This repository has no application frontend. The user-facing frontend is the GitHub README, generated bitmap assets, and SVG support assets.
 
 ## Design goals
 
@@ -13,9 +13,9 @@ This repository has no application frontend. The user-facing frontend is the Git
 
 ## Asset rules
 
-- Use SVG for diagrams and maps when the content is structural.
-- Use generated bitmap images for the README hero and infographic when the asset needs cinematic texture, real scene depth, or visual storytelling.
-- Bitmap hero/infographic assets should be text-free or nearly text-free, logo-free, and readable at GitHub README width.
+- Use SVG for simple structural support diagrams.
+- Use generated bitmap images for the README hero, operating-system infographic, and skill-map infographic when the asset needs cinematic texture, real scene depth, or visual storytelling.
+- Bitmap hero/infographic/map assets should be text-free or nearly text-free, logo-free, and readable at GitHub README width.
 - SVG assets must include `<title>` and `<desc>`.
 - No external scripts, images, fonts, or tracking in SVG assets.
 - Avoid generic lens dashboards, dense decorative noise, and unreadable micro labels.

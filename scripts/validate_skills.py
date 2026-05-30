@@ -23,6 +23,7 @@ REQUIRED_REFERENCES = [
     "references/agent-compatibility.md",
     "references/api-workflow.md",
     "references/examples-by-mode.md",
+    "references/multilingual-community-examples.md",
     "references/platform-surface-matrix.md",
     "references/model-name-map.md",
     "references/first-last-frame-guide.md",
@@ -66,6 +67,7 @@ REQUIRED_FILES = [
     "data/community-patterns.seedance-2026-05-30.json",
     "assets/hero-cinematic.png",
     "assets/skill-os-infographic.png",
+    "assets/skill-map-cinematic.png",
     "assets/hero-dark.svg",
     "assets/hero-light.svg",
     "assets/skill-map.svg",
@@ -150,8 +152,8 @@ def validate_skill(path: Path, root: Path, errors: list[str], warnings: list[str
         if metadata_value(frontmatter, "parent") != "seedance-20":
             errors.append(f"{rel}: missing metadata.parent: seedance-20")
 
-    if metadata_value(frontmatter, "version") != "5.4.2":
-        errors.append(f"{rel}: metadata.version must be 5.4.2")
+    if metadata_value(frontmatter, "version") != "5.4.3":
+        errors.append(f"{rel}: metadata.version must be 5.4.3")
 
     description = value_for(frontmatter, "description") or ""
     if not description.startswith("This skill should be used when"):
@@ -235,7 +237,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print(f"Validated root plus {len(EXPECTED_SKILLS)} sub-skills and required v5.4.2 files.")
+    print(f"Validated root plus {len(EXPECTED_SKILLS)} sub-skills and required v5.4.3 files.")
     return 0
 
 

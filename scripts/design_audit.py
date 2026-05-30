@@ -29,12 +29,14 @@ def main() -> int:
         for required in [
             "assets/hero-cinematic.png",
             "assets/skill-os-infographic.png",
+            "assets/skill-map-cinematic.png",
             "## What This Skill Does",
             "## Operating System At A Glance",
             "## Start Here",
             "## Skill Map",
             "api-workflow.md",
             "examples-by-mode.md",
+            "multilingual-community-examples.md",
             "## Validation",
             "## Design Standard",
         ]:
@@ -56,6 +58,12 @@ def main() -> int:
     elif infographic.stat().st_size < 100_000:
         errors.append("assets/skill-os-infographic.png appears too small for a real infographic image")
 
+    skill_map = root / "assets" / "skill-map-cinematic.png"
+    if not skill_map.exists():
+        errors.append("missing asset: assets/skill-map-cinematic.png")
+    elif skill_map.stat().st_size < 100_000:
+        errors.append("assets/skill-map-cinematic.png appears too small for a real skill-map image")
+
     for rel in ["assets/hero-dark.svg", "assets/hero-light.svg", "assets/skill-map.svg"]:
         path = root / rel
         if not path.exists():
@@ -75,7 +83,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
 
-    print("Design audit passed: README and SVG assets are structured and accessible.")
+    print("Design audit passed: README and visual assets are structured and accessible.")
     return 0
 
 

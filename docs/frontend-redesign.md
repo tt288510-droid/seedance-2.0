@@ -6,6 +6,7 @@ The repository does not currently contain a standalone web app. The public front
 
 - Lead with a real cinematic production-control hero instead of generic abstract graphics.
 - Show Seedance's practical range: references, first/last-frame continuity, product reveal, timeline control, audio, and camera direction.
+- Use generated cinematic infographics for both the operating-system overview and skill map.
 - Keep bitmap assets text-free so GitHub renders all important content as searchable Markdown.
 - Keep SVG assets as support diagrams, not the primary emotional surface.
 - Validate README completeness and asset presence with `scripts/design_audit.py`.
@@ -23,6 +24,7 @@ The repository does not currently contain a standalone web app. The public front
 
 - `assets/hero-cinematic.png`
 - `assets/skill-os-infographic.png`
+- `assets/skill-map-cinematic.png`
 - `assets/hero-dark.svg`
 - `assets/hero-light.svg`
 - `assets/skill-map.svg`
