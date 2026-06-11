@@ -1,6 +1,6 @@
 ---
 name: seedance-20
-description: "This skill should be used when directing Seedance 2.0 T2V, I2V, V2V, R2V, audio, safety, or API work."
+description: "This skill should be used when creating, improving, or troubleshooting Seedance 2.0 video on any surface - Dreamina, Jimeng, CapCut, Doubao, Volcengine/Ark, BytePlus, Runway's Seedance route, or fal - including text/image/video/reference-to-video prompts, first/last frame, dialogue, lip-sync and audio, IP-safe rewrites, API, pricing and model-ID questions, and zh/ja/ko/es/ru prompt work. Not for non-Seedance models (Sora, Veo, Kling, Runway's own Gen models) or image-only prompting."
 license: MIT
 user-invocable: true
 tags: [seedance]
