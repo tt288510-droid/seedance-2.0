@@ -67,6 +67,7 @@ REQUIRED_IDS = {
     "multilingual_slop_decomposition",
     "multi_person_action_hierarchy",
     "novel_case_mechanism_reasoning",
+    "retake_triage_discipline",
 }
 
 

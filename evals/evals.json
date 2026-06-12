@@ -937,6 +937,22 @@
         "seedance-troubleshoot",
         "seedance-prompt"
       ]
+    },
+    {
+      "id": "retake_triage_discipline",
+      "prompt": "Take 3 came back: the product looks perfect, the lighting is a bit flat, and there's a typo on the background sign. Should I regenerate?",
+      "expected_output": "Triage, not regeneration: the primary spend (product identity) is delivered, so the take is a keep; the sign text routes to post and the flat light to a grade or a single-variable edit. Cites the one-variable rule and the attempt budget; any cost figure carries a verify-live caveat.",
+      "assertions": [
+        "recognizes the primary spend is delivered and does not regenerate",
+        "routes the typo to post and the flat lighting to a grade or one-variable edit",
+        "applies the one-variable rule and references the attempt budget",
+        "quotes no cost figure without a verification date and verify-live caveat"
+      ],
+      "failure_mode": "reflexive regeneration of a keepable take, or multi-variable retakes",
+      "skills_expected_to_activate": [
+        "seedance-troubleshoot",
+        "seedance-pipeline"
+      ]
     }
   ]
 }

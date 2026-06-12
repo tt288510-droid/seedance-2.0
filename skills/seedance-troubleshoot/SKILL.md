@@ -20,7 +20,7 @@ metadata:
 
 # seedance-troubleshoot
 
-Diagnose failure before rewriting. Do not simply add more adjectives. Identify whether the failure came from mode mismatch, overload, ambiguity, fragile identity, unsafe wording, unsupported platform behavior, or missing preservation constraints.
+If the take is partially good rather than failed, route to `[ref:retake-protocol]` triage first - most takes deserve a verdict, not a rewrite. Diagnose failure before rewriting. Do not simply add more adjectives. Identify whether the failure came from mode mismatch, overload, ambiguity, fragile identity, unsafe wording, unsupported platform behavior, or missing preservation constraints.
 
 When the diagnostic tree has no row for the failure, load `[ref:model-mechanics]` and diagnose by mechanism: attention dilution, prior conflict, summoned negation, broken trajectory, compounding error, conditioning conflict, capacity starvation, or an overloaded audio-video joint constraint. Load `[ref:field-observed-tips]`, `[ref:reference-workflow]`, and `[ref:api-workflow]` when the failure involves continuation, edit/extend, source clips, audio references, or platform-specific errors. Load `[ref:shot-list-continuity]` for multi-shot drift and `[ref:delivery-qc]` for final-client or delivery failures.
 

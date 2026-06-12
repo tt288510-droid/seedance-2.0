@@ -26,6 +26,7 @@ REQUIRED_REFERENCES = [
     "references/api-workflow.md",
     "references/capability-map.md",
     "references/model-mechanics.md",
+    "references/retake-protocol.md",
     "references/allocation-model.md",
     "references/multishot-grammar.md",
     "references/2d-anime-grammar.md",
