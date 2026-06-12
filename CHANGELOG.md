@@ -2,6 +2,23 @@
 
 All notable changes to this project are documented here.
 
+## [5.4.8] — 2026-06-12
+
+### Added
+
+- Added the editorial front-page design system: hand-built theme-aware SVG masthead (`hero-dark.svg`/`hero-light.svg` behind a `prefers-color-scheme` picture element), a specification-style operating diagram (`skill-map.svg`), unified flat-square ink/amber badges, and design tokens in `frontend-design-system.md` — no gradients, no glow, serif display over monospace labels.
+- Added field techniques from the Chinese community study: the three-tier action hierarchy for multi-person stability (`seedance-characters`), I2V Hold/React modes (`i2v-guide.md`), the source-look lock for UGC/livestream/film realism (`seedance-style`), the Dreamina/Jimeng bracketed timeline skeleton with a zh template (`multishot-grammar.md`, `vocab/zh.md`), atmosphere-coherence declarations, prop-physics fragility in the capability map, and three recipe families: short drama (短剧), talking head (口播), and home tour.
+- Added Russian dialogue engineering from the Russian community study (`vocab/ru.md`, `seedance-vocab-ru`, `audio-guide.md`): short-line rule, the Cyrillic-versus-transliteration field matrix, one-speaker-per-generation, the post-dub fallback for fully voiced pieces, and the access-from-RF wrapper caution.
+- Added eval case for the multi-person action hierarchy (59 protected cases).
+
+### Changed
+
+- Hardened `scripts/design_audit.py` to require the theme-aware vector masthead and reject gradients, blur filters, and missing serif/monospace stacks in vector assets.
+- Added a safety fast-path to operating-loop intake: clear safety, IP, likeness, or evasion risks route to the safety gate before any planning (stress-test finding).
+- Right-anchored the hero specification row to the content margin in both theme variants.
+- Relocated generated bitmap art to the curated Visual Gallery; the README's working visuals are now vector.
+- Bumped active skill metadata, validator expectations, and eval metadata to v5.4.8.
+
 ## [5.4.7] — 2026-06-11
 
 ### Added
