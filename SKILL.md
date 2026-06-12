@@ -50,5 +50,6 @@ Seedance 2.0 operating loop for agent-directed video work. Use this root skill t
 | Chinese/Russian/Japanese/Korean/Spanish or mixed-language examples | `[ref:multilingual-community-examples]`, language vocab reference |
 | Slop-heavy or filter-tripping English wording | `[skill:seedance-vocab-en]`, `[skill:seedance-antislop]` |
 | Bad result | `[skill:seedance-troubleshoot]` |
+| Why a rule works, or a novel case no rule covers | `[ref:model-mechanics]` |
 
 Preserve reference tags exactly, keep prompts short, and never convert field-observed community tricks into official platform guarantees. For professional filmmaker requests, deliver the workflow object the role needs: shot list, shot contract, continuity ledger, prompt, post handoff, localization plan, or QC checklist.

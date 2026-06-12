@@ -1,6 +1,6 @@
 # Capability Map — design into strengths, around limits
 
-*What Seedance 2.0 is best at, how to extract each strength, and what to design around. Load before prompt planning. Labels: [official] = ByteDance/fal/Ark docs · [field] = practitioner-reported · [heuristic] = default to test. Last verified 2026-06-09.*
+*What Seedance 2.0 is best at, how to extract each strength, and what to design around. Load before prompt planning. Labels: [official] = ByteDance/fal/Ark docs · [field] = practitioner-reported · [heuristic] = default to test. Last verified 2026-06-09. The mechanics behind these rows live in `model-mechanics.md`.*
 
 ## Design INTO these
 

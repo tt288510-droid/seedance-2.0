@@ -921,6 +921,22 @@
         "seedance-characters",
         "seedance-motion"
       ]
+    },
+    {
+      "id": "novel_case_mechanism_reasoning",
+      "prompt": "I want the reflection in the mirror to lag two seconds behind the actress. There's no guide for this - what will happen and how should I shoot it?",
+      "expected_output": "Reasons from model mechanics rather than guessing: identifies the request as distribution-rare with conflicting trajectories, predicts instability, and offers mechanism-aligned staging (two shots, mirror-as-subject, or a short accepted-instability window) with honest uncertainty.",
+      "assertions": [
+        "identifies which mechanisms dominate (training-distribution rarity, trajectory conflict)",
+        "predicts the likely failure mode before prompting",
+        "offers staging that works with the mechanism instead of against it",
+        "labels the reasoning as a working model, not a platform guarantee"
+      ],
+      "failure_mode": "guessed prompt with no mechanism reasoning, or certainty about unpublished internals",
+      "skills_expected_to_activate": [
+        "seedance-troubleshoot",
+        "seedance-prompt"
+      ]
     }
   ]
 }
