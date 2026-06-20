@@ -149,7 +149,8 @@ Real-person face, portrait, and voice workflows require authorization, legal/eth
 - https://muapi.ai/
 - https://seegen.ai/
 - https://www.segmind.com/models/seedance-2.0
-- https://docs.dev.runwayml.com/guides/seedance/
+- https://docs.dev.runwayml.com/guides/models/
+- https://docs.dev.runwayml.com/api-details/api_changelog/
 - https://help.runwayml.com/hc/en-us/articles/50488490233363-Creating-with-Seedance-2-0
 - https://docs.comfy.org/zh/tutorials/partner-nodes/bytedance/seedance-2-0
 - https://arxiv.org/abs/2605.24652
