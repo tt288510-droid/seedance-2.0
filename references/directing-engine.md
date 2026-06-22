@@ -148,6 +148,91 @@ Idea: "a kid finally rides a bike on her own."
 - **Clip 2 (rising):** tracking alongside at her height, subtle handheld, sun flaring through spokes, sound tightens to breath and tire hum; the parent's hands leave the frame. Intention: she is doing it and does not yet know. Trends: tighter, moving, warmer, denser.
 - **Clip 3 (turn / climax, the pattern break):** the only locked, held shot - a still medium as she rides away from camera into the warm light, then the smallest glance back; ambient swells once. Intention: she knows. The break from the moving camera to a held frame is the meaning. Compile from Clip 2's accepted final frame and observed state; do not assume she already looked back until the footage shows the ride.
 
+## Worked Examples by Genre
+
+Each example runs the same procedure: read, intention, voice, coherent setup, performance, and one compiled prompt sentence. Notice that the voice and instruments change because the scene is doing something different every time. Keep faces, hands, logos, and text stable in every prompt.
+
+### Product / commercial reveal
+
+- **Idea:** "a luxury watch ad."
+- **Read.** Function: make it credible and desirable. Turn: ordinary object to object of desire. POV: the buyer's eye. Power: the object commands. Subtext: precision equals status.
+- **Intention:** make the audience covet the craftsmanship. **Voice:** composed classicist.
+- **Setup:** locked slider from a raking silhouette to a front three-quarter hero ending on the dial; gentle compression; one narrow warm key sweeping the brushed case with controlled speculars on black; clean room tone with a single mechanical tick.
+- **Performance:** the watch is the performer - the second hand completes one precise sweep.
+- **Prompt:** `[Image1] is the watch; preserve case, dial, hands, and logo exactly. Slow slider from a raking silhouette to a front three-quarter hero ending on the dial; gentle compression; one narrow warm key sweeps the brushed steel with controlled speculars on a black background; the second hand completes a single smooth sweep; low room tone with one soft mechanical tick; do not alter case shape, dial text, or proportions.`
+
+### Music video beat
+
+- **Idea:** "a singer in a neon room for a synth track."
+- **Read.** Function: make the audience feel the drop. Turn: restraint to release on the beat. POV: inside the rhythm. Power: the music drives. Subtext: euphoria.
+- **Intention:** make the body feel the downbeat hit. **Voice:** expressive stylist.
+- **Setup:** a designed move that snaps from a slow push to a held wide on the drop; bold magenta and cyan from visible practical tubes; saturated signature palette; the cut and a light pulse lock to the beat; gestural performance.
+- **Performance:** the artist holds stillness through the build, then one sharp gesture lands exactly on the downbeat as the lights pulse.
+- **Prompt:** `Character A at a microphone in a neon room lit by visible magenta and cyan tubes; hold stillness through the build, then one sharp head-and-shoulder gesture lands on the downbeat as the lights pulse and the camera snaps from a slow push to a held wide; saturated high-contrast palette; beat-synced light pulse; keep the face stable and put motion only on the beat.`
+
+### Horror / suspense
+
+- **Idea:** "someone hears a noise in the basement."
+- **Read.** Function: dread before the threat. Turn: safe to hunted. POV: the victim's. Power: the unseen has it. Subtext: it is already here.
+- **Intention:** make the audience afraid of what they cannot see. **Voice:** intimate minimalist tilting to graphic.
+- **Setup:** a very slow creeping push on a doorway that keeps the danger unseen; high-ratio low-key with one bare practical and deep pooling shadow; sound thickens with one off-screen cue inside held silence; no jump, only withholding.
+- **Performance:** she stops, holds her breath, hand on the rail, eyes searching the dark - the one true gesture is the breath she does not take.
+- **Prompt:** `Medium shot of Character A at the top of a basement stairwell, one bare bulb throwing hard shadow; she stops, holds her breath, hand on the rail, eyes searching the dark below; very slow push toward the doorway that keeps the bottom of the stairs unseen; high-contrast low-key light with deep pooling shadow; near-silence with one low off-screen scrape; no on-screen reveal; keep the face stable.`
+
+### Anime / 2D power-up
+
+- **Idea:** "an original anime hero gathers resolve before a fight."
+- **Read.** Function: the surge of resolve. Turn: doubt to resolve. POV: the hero's. Power: rising. Subtext: he will not lose.
+- **Intention:** make the audience feel the charge of resolve. **Voice:** expressive stylist in 2D grammar.
+- **Setup:** no photographic lens language; a held tense frame then a burst of radiating motion lines and one impact frame on the power-up; flat but dramatic cel light with a hard rim; saturated key color; one held beat, then a hard snap. Load `[ref:2d-anime-grammar]`.
+- **Performance:** the body holds coiled, then a single explosive stance change on the burst frame.
+- **Prompt:** `Original 2D cel-animated hero, hand-drawn line, saturated key color, hard rim light; hold a tense coiled frame, then burst into a single explosive stance change with radiating motion lines and one impact frame as energy flares; flat dramatic cel lighting, no photographic lens language; held beat then a hard snap; keep the character design and silhouette consistent.`
+
+### Action / pursuit
+
+- **Idea:** "a courier runs from someone through a market."
+- **Read.** Function: raise the stakes of the chase. Turn: pursued to nearly cornered. POV: the runner's. Power: the pursuer closing. Subtext: survival.
+- **Intention:** make the audience feel the closing distance. **Voice:** kinetic visceral.
+- **Setup:** handheld tracking at the runner's shoulder; strict screen direction; hard high-contrast daylight between stalls; sound thickens to breath, footfalls, and clatter; one clear physical objective.
+- **Performance:** effort and consequence - a shove off a stall, a stumble and recovery.
+- **Prompt:** `Handheld tracking at Character A's shoulder as he runs left to right through a crowded market, shoving off a fruit stall and recovering from a stumble while a pursuer stays in frame behind him, closing; hard high-contrast daylight between stalls; sound thickens to breath, footfalls, and market clatter; keep screen direction consistent and the face stable enough to read effort.`
+
+### Comedy pratfall
+
+- **Idea:** "a confident man walks into a glass door."
+- **Read.** Function: the joke. Turn: confidence to humiliation. POV: the observer's. Power: physics wins. Subtext: pride before the fall.
+- **Intention:** land the timing of the pratfall. **Voice:** graphic formalist, deadpan.
+- **Setup:** a locked symmetrical wide with clean geography so the glass is fair but invisible; a deadpan hold past comfort; one absurd visible beat; a single dry SFX; no camera reaction.
+- **Performance:** full commitment - confident stride, the smack, a beat of stillness, then he straightens his collar and continues.
+- **Prompt:** `Locked symmetrical wide of a clean glass-fronted lobby; Character A strides in confidently and walks flat into the glass door with a single dry thud, holds still for a beat, then straightens his collar and continues; flat even light, no camera movement, no reaction zoom; one dry impact sound; hold the frame past comfort.`
+
+### UGC / caught real moment
+
+- **Idea:** "a phone clip of a dog stealing a sandwich."
+- **Read.** Function: a real moment caught. Turn: calm to chaos. POV: the filmer's. Power: the dog. Subtext: delight.
+- **Intention:** make it feel genuinely caught, not staged. **Voice:** observational naturalist with a phone-UGC source lock.
+- **Setup:** vertical handheld phone footage, slight grip sway, an auto-exposure shift on the pan, ambient kitchen sound; embrace the artifacts, because faux-clean reads fake. Load the source-look lock in `[skill:seedance-style]`.
+- **Performance:** the dog's one decisive lunge and grab; a human hand reaches a half-second too late.
+- **Prompt:** `Vertical handheld phone footage with slight grip sway and an auto-exposure shift; a dog on the counter makes one decisive lunge, grabs a sandwich, and bolts as an off-screen hand reaches a half-second too late; ambient kitchen room tone, no music; keep the look unpolished and the dog's grab the single beat.`
+
+### Transformation / VFX brand reveal
+
+- **Idea:** "frost spreads across a window and stops at a logo."
+- **Read.** Function: a brand reveal through transformation. Turn: clear to frosted. POV: the watcher's. Power: the cold. Subtext: precision and control.
+- **Intention:** make the transformation feel inevitable and exact. **Voice:** composed classicist.
+- **Setup:** a locked macro so the change is fully legible; cool motivated side light that rakes the crystal growth; one cause - cold - with visible consequences; a clean bed with a faint crackle; ends on the protected logo.
+- **Performance:** the material is the performer - crystals advance and halt cleanly at the logo edge.
+- **Prompt:** `Locked macro on a clear glass pane; over the clip, frost crystals grow inward from the edges and halt cleanly at the etched logo, leaving it clear; cool motivated side light rakes the crystal growth; one cause, cold, with visible crystal advance; quiet bed with a faint ice crackle; preserve the logo shape and keep the camera locked.`
+
+### Establishing / landscape
+
+- **Idea:** "a fishing village wakes at dawn."
+- **Read.** Function: place the world and a subject in it. Turn: night to day, stillness to work. POV: an arriving observer. Power: the place. Subtext: the rhythm of labor.
+- **Intention:** make the audience feel the world breathe awake. **Voice:** observational naturalist.
+- **Setup:** a wide-to-medium move that finds one human in the geography; low warm sun breaking over moored boats; layered depth into haze; ambient gulls and water; the human is the anchor that saves it from an empty vista.
+- **Performance:** one fisherman coils a rope and looks to the horizon.
+- **Prompt:** `Wide establishing of a small fishing harbor at first light; a slow move settles on one fisherman coiling a rope on the dock and looking to the horizon; low warm sun breaks over the moored boats with layered depth into morning haze; ambient gulls, lapping water, and a distant engine; keep the human as the anchor and the move motivated.`
+
 ## Anti-Slop for Direction
 
 Refuse: technique chosen to impress rather than to mean; "cinematic / epic / beautiful" as a goal; mixing directorial voices inside one project; performance written as an emotion word; a moving camera with no motivated reason; light with no source; instruments that individually look good but point in different directions. The fix is always the same - return to the one-sentence intention and make every choice serve it in the project's single voice.

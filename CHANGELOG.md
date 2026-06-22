@@ -15,6 +15,7 @@ _No unreleased changes._
 - Added `references/directing-engine.md`: a directorial reasoning layer above the camera, lighting, motion, and character lookup tables. It reads a scene's dramatic function (function, turn, POV, power, subtext), names one intention, and derives a single coherent setup where camera, lens, light, blocking, performance, and sound all reinforce that intention instead of stacking generic "cinematic" descriptors.
 - Added a Director's Voice model with six IP-safe functional style archetypes so a project keeps one consistent directorial hand, plus a long-form look spine that progresses scale, movement, light, and sound across connected clips and marks the single clip that breaks the pattern at the story turn.
 - Added performance direction that converts emotion into one true visible gesture per beat, plays subtext through contradiction, and a coherence test that rejects unmotivated technique.
+- Added a genre worked-example library in the directing engine - product, music video, horror, 2D anime, action, comedy, UGC, transformation/VFX, and establishing - each a full read, intention, voice, setup, performance, and compiled-prompt derivation.
 - Added two eval cases: `directing_scene_coherence` and `directorial_voice_across_sequence`.
 
 ### Changed
