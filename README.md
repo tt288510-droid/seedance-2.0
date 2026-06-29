@@ -12,10 +12,10 @@
 
 An agent that directs Seedance 2.0 like a filmmaker — reading each scene before it writes the prompt.<br>Text, image, video, and reference to video with native audio, IP-safe rewrites, source-dated platform facts, and native reader paths for English, 中文, 日本語, and 한국어.
 
-[![Version](https://img.shields.io/badge/version-6.1.0-E2A75E?style=flat-square&labelColor=14110B)](#changelog)
+[![Version](https://img.shields.io/badge/version-6.2.0-E2A75E?style=flat-square&labelColor=14110B)](#changelog)
 [![Sub-skills](https://img.shields.io/badge/sub--skills-28-4A4438?style=flat-square&labelColor=14110B)](#skill-map)
-[![References](https://img.shields.io/badge/references-57-4A4438?style=flat-square&labelColor=14110B)](#reference-library)
-[![Evals](https://img.shields.io/badge/evals-114-4A4438?style=flat-square&labelColor=14110B)](#validation)
+[![References](https://img.shields.io/badge/references-58-4A4438?style=flat-square&labelColor=14110B)](#reference-library)
+[![Evals](https://img.shields.io/badge/evals-121-4A4438?style=flat-square&labelColor=14110B)](#validation)
 [![License](https://img.shields.io/badge/license-MIT-4A4438?style=flat-square&labelColor=14110B)](LICENSE)
 
 [Start here](#start-here) · [Skill map](#skill-map) · [Reference library](#reference-library) · [Visual gallery](#visual-gallery) · [Install](#install)
@@ -28,7 +28,7 @@ Author: [Iamemily2050 (@iamemily2050)](https://github.com/Emily2040) · [Instagr
 
 Platform context: [ByteDance Seedance 2.0](https://seed.bytedance.com/en/seedance2_0) · Dreamina · Jimeng · Doubao · [Volcengine Ark](https://www.volcengine.com/docs/82379/2291680?lang=zh) · [BytePlus ModelArk](https://docs.byteplus.com/en/docs/ModelArk/2291680) · [Runway Seedance 2](https://docs.dev.runwayml.com/guides/models/) · fal · provider/router surfaces tracked in [`platform-surface-matrix.md`](references/platform-surface-matrix.md)
 
-Updated: **2026-06-22** · **v6.1.0 directing engine: motivated scene direction and one directorial voice across a story**
+Updated: **2026-06-28** · **v6.2.0 model-in-the-loop eval harness and a de-templated 47-case sequence suite**
 
 ---
 
@@ -36,7 +36,7 @@ Updated: **2026-06-22** · **v6.1.0 directing engine: motivated scene direction 
 
 Most tools ask the model for a "cinematic look." A director asks what the scene is *doing* — then makes the camera, lens, light, blocking, performance, and sound all serve one intention, in a single recognizable voice, across an entire story.
 
-The v6.1.0 [**directing engine**](references/directing-engine.md) encodes that judgment. It reads a scene's dramatic function — the turn, the point of view, the power, the subtext — names one intention, and derives a coherent setup instead of stacking adjectives.
+The [**directing engine**](references/directing-engine.md) encodes that judgment. It reads a scene's dramatic function — the turn, the point of view, the power, the subtext — names one intention, and derives a coherent setup instead of stacking adjectives.
 
 **Ask for "cinematic":** `epic cinematic shot of a woman reading a letter, emotional, beautiful lighting`
 
@@ -266,6 +266,7 @@ Concept art for the system, generated and curated. Every image is paired with se
 | [`api-workflow.md`](references/api-workflow.md) | Volcengine, BytePlus, Runway, provider/router APIs, async task, reference-file, pricing, and production workflow checklist. |
 | [`capability-map.md`](references/capability-map.md) | Design into model strengths and around known limits before prompting. |
 | [`directing-engine.md`](references/directing-engine.md) | Read the scene, choose one intention, make every instrument cohere, hold one directorial voice, and shape the look across a long story. |
+| [`directing-engine-genre-library.md`](references/directing-engine-genre-library.md) | 33 fully worked genre examples (product, music video, horror, anime, action, documentary, and more), loaded on demand. |
 | [`model-mechanics.md`](references/model-mechanics.md) | Why the rules work: eight mechanisms of the generator, novel-case derivation, mechanism-indexed diagnosis. |
 | [`retake-protocol.md`](references/retake-protocol.md) | The iteration economy: take triage, the one-variable rule, attempt budgets, cost awareness, the shot log. |
 | [`sequence-project-state.md`](references/sequence-project-state.md) | Stateful project model, canon reconciliation, visual state fields, and Project State Capsule. |
@@ -370,12 +371,22 @@ python scripts/behavior_contract_check.py --strict
 python scripts/sequence_eval_check.py --strict
 python scripts/generation_run_check.py --strict
 python scripts/prompt_lint.py --self-test --strict
+python scripts/eval_run.py --self-test --strict
 python -m unittest discover -s tests -v
 python -m compileall scripts tests
 git diff --check
 ```
 
-The CI workflow runs the same checks on push and pull request.
+The CI workflow runs the same checks on push and pull request. These are deterministic and offline — they prove the package is well-formed.
+
+To prove the package is also *good*, run the model-in-the-loop harness, which sends each eval case through the real skill content and scores the response against the case's assertions using [`eval-rubric.md`](references/eval-rubric.md):
+
+```bash
+export ANTHROPIC_API_KEY=...   # required for a live scored pass
+python scripts/eval_run.py --run --ledger evals/eval-run-ledger.md --stamp 2026-06-28
+```
+
+This is the quality gate, not a shape gate, so it lives outside offline CI; the latest scored run is recorded in [`evals/eval-run-ledger.md`](evals/eval-run-ledger.md).
 
 ## Design Standard
 
@@ -387,7 +398,7 @@ The README must stay readable in GitHub mobile, dark mode, and narrow widths. SV
 
 ## Changelog
 
-See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v6.1.0**.
+See [`CHANGELOG.md`](CHANGELOG.md). Current release: **v6.2.0**.
 
 ## License
 

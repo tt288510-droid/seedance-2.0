@@ -2,11 +2,36 @@
 
 All notable changes to this project are documented here.
 
-Current active release: **6.1.0**. Older entries below are preserved as release history, not active version guidance.
+Current active release: **6.2.0**. Older entries below are preserved as release history, not active version guidance.
 
 ## Unreleased
 
 _No unreleased changes._
+
+## [6.2.0] — 2026-06-28
+
+### Added
+
+- Added `scripts/eval_run.py`, a model-in-the-loop eval harness: it builds a responder context from the real skill content (root `SKILL.md`, the case's expected sub-skills, and any `state_fixture`), gets a response to each case prompt, then has a judge model score that response against the case's own assertions using `references/eval-rubric.md` (0-3 legacy / 0-4 sequence scales and the documented release thresholds). An offline `--self-test` wiring check runs in CI; a live scored pass is the quality gate that lives outside offline CI, recorded in `evals/eval-run-ledger.md`.
+- Added six directing-engine eval cases (reveal-vs-goodbye distinct setup, pattern-break marks the turn, performance-as-gesture, subtext-through-contradiction, lighting-ratio-serves-emotion, refuses-unmotivated-technique) so the v6.1.0 flagship has proportional coverage.
+
+### Changed
+
+- De-templated all 47 sequence eval cases: each now carries a concrete scenario prompt and 2-4 case-specific assertions that name the behavior its id promises, replacing the placeholder "V6 check: ..." prompts and the identical three generic assertions. The structural fields (`forbidden_behaviors`, `expected_sequence_relation`, `critical`, ...) are preserved, so `sequence_eval_check` still holds.
+- Split the 454-line directing engine for progressive-disclosure compliance: the 33-genre worked-example library moved to `references/directing-engine-genre-library.md`, loaded on demand via the genre/examples route, so the always-on Direction step no longer pulls the whole library (the reasoning core stays ~157 lines).
+- Rewrote `references/progressive-disclosure.md` to describe the real file set, heavy-vs-cheap reference loading, the directing-engine split, the genre-content ownership map, and a freshness rule.
+- Added a `## Intent` section to `seedance-continuation`, the only sub-skill that lacked one.
+- Added three CI guards: every sub-skill must carry `## Intent`; freshness-critical platform references must stay within 30 days of `api-status.md`'s `last_verified`; and `progressive-disclosure.md` must document the directing-engine heavy references.
+- Bumped active release metadata, README badges (121 eval cases, 58 references), eval/validator expectations, manifest, readiness doc, examples, and translated entry lines to v6.2.0.
+
+## [6.1.1] — 2026-06-28
+
+### Changed
+
+- Added a **Fast Lane** to the root operating loop: a single standalone clip from a non-expert, with no IP/safety flag and no platform-fact question, now routes straight to `seedance-interview-short` -> `seedance-prompt-short` with the source gate, professional gate, capability-map, allocation-model, and the directing engine all load-on-demand instead of mandatory. This fixes a self-inflicted violation of the skill's own intent-first / progressive-disclosure principles on the most common case.
+- Made the directing engine load-on-demand rather than always-on: the root Direction step and the full interview now apply the one-sentence-intention coherence rule inline from memory and load `[ref:directing-engine]` only when scenes need distinct treatment, one voice must hold across many clips, or the setup is genuinely unclear.
+- Deferred the sequence/continuation interview questions (Q6-Q9) for plain single-clip ideas: questions 1-5 are the single-clip core; 6-9 are raised only when the idea is already a longer story or the user signals a series, part two, continuation, or making it longer.
+- Added eval case `beginner_fast_lane_single_clip`; bumped active metadata, README badges, eval/validator expectations, manifest, and readiness doc to v6.1.1 (115 eval cases).
 
 ## [6.1.0] — 2026-06-22
 

@@ -119,8 +119,15 @@ REQUIRED_IDS = {
     "i2v_does_not_redundantly_redescribe_image",
     "r2v_reference_roles_do_not_bleed",
     "sequence_prompt_contains_only_current_clip",
+    "beginner_fast_lane_single_clip",
     "directing_scene_coherence",
     "directorial_voice_across_sequence",
+    "directing_reveal_vs_goodbye_distinct_setup",
+    "directing_pattern_break_marks_turn",
+    "directing_performance_as_gesture",
+    "directing_subtext_through_contradiction",
+    "directing_lighting_ratio_serves_emotion",
+    "directing_refuses_unmotivated_technique",
 }
 
 

@@ -5,7 +5,7 @@ license: MIT
 user-invocable: true
 tags: [seedance]
 metadata:
-  version: "6.1.0"
+  version: "6.2.0"
 ---
 
 # seedance-20
@@ -19,6 +19,17 @@ This skill exists so that a person who arrives with a feeling leaves with a film
 1. **Hear the intent behind the words.** Users describe outcomes ("make it feel like home"), not parameters. Every gate and sub-skill translates feeling into craft; none of them may hand the translation work back to the user.
 2. **Keep the story alive.** Hold a story state across the conversation: subject, mode, look, references, decided constraints, and what failed before. Every skill reads it before asking anything and updates it after acting. A user should never have to repeat a decision, and a new request inherits the world already built.
 3. **Evolve with the user.** Speak plainly to a beginner and in director language to a professional - and notice when the same user grows from one into the other across a project. The register adapts; the standards never do.
+
+## Fast Lane
+
+Most requests are one short clip from someone who just wants to see their idea. Do not run the full gate loop on them. Take the fast path when the request is a single standalone clip, from a non-expert, with no IP/likeness/brand/real-person or safety flag and no platform-fact question (API, pricing, model ID, limits, region):
+
+1. Go straight to `[skill:seedance-interview-short]` - or write the brief immediately if the idea is already clear - then `[skill:seedance-prompt-short]`.
+2. Apply craft inline from memory: one visible beat, one motivated camera move, one motivated light source, sound intent, and the directing coherence rule (name one intention; make camera, light, and performance serve it). Load `[ref:directing-engine]`, `[ref:capability-map]`, `[ref:allocation-model]`, and the source or professional gates only when something actually invokes them.
+3. Treat it as one clip: do not ask sequence or continuation questions yet. Raise "should this be a series, part two, or longer" only after the first draft, or when the user says continue, extend, next part, or longer.
+4. Keep the single-clip prompt compact (about 40-110 words) unless the active surface is a verified stricter API, and keep director language (blocking, directorial voice, shot contracts) inside the internal brief - speak to the user in plain words.
+
+Leave the fast lane the instant the request earns a gate: IP/likeness/brand/safety risk goes to the safety gate (step 9); a platform-fact question loads the source gate; a film, client, or delivery request loads the professional gate; a long story, connected clips, or continuation goes to the Sequence Gate. When in doubt about safety, leave the fast lane. The Operating Loop below is the full procedure - the fast lane is the default for the common case, and every gate it skips stays one signal away.
 
 ## Operating Loop
 
@@ -34,7 +45,7 @@ This skill exists so that a person who arrives with a feeling leaves with a film
 7. Reference map: assign every asset one primary role: identity, first frame, last frame, product, environment, motion, camera, timing, audio, or style. State what must not transfer.
 8. Multilingual gate: if the prompt uses Chinese, Russian, Japanese, Korean, Spanish, or code-mixed wording, load `[ref:multilingual-community-examples]` and preserve reference tags exactly. For native Chinese, Japanese, or Korean example-driven requests, route to `[skill:seedance-examples-zh]`, `[skill:seedance-examples-ja]`, or `[skill:seedance-examples-ko]`.
 9. Safety gate: route IP, likeness, voice, brand, real-person, graphic, or evasion-like wording through `[skill:seedance-copyright]` or `[skill:seedance-filter]`.
-10. Direction: before drafting any scene, load `[ref:directing-engine]` to read what the scene is doing (function, turn, POV, power, subtext), set or inherit one directorial voice, and derive a single coherent setup - camera, lens, light, blocking, performance, and sound all serving one intention - instead of picking a "cinematic look".
+10. Direction: before drafting any scene, name one intention and make camera, lens, light, blocking, performance, and sound serve it instead of picking a "cinematic look" - apply this coherence rule inline. Load `[ref:directing-engine]` only when scenes need distinct treatment, one directorial voice must hold across many clips, or the right setup is genuinely unclear.
 11. Prompt build: route to `[skill:seedance-interview]`, `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, `[skill:seedance-sequence]`, `[skill:seedance-continuation]`, or a domain skill for camera, motion, lighting, audio, characters, VFX, style, recipes, or pipeline.
 12. Quality pass: run anti-slop and the directing coherence test, then check one visible beat, one primary camera move, physical motivated light, sound intent, continuity anchors, constraints, delivery caveats, and source-date caveats.
 13. Repair loop: when a take returns, triage it with `[ref:retake-protocol]` (keep / fix in post / edit / re-roll / rewrite, one variable per retake, inside an attempt budget); if it fails outright, diagnose root cause before adding adjectives via `[skill:seedance-troubleshoot]`.
@@ -78,7 +89,7 @@ Sequence invariants:
 | First and last frame | `[ref:first-last-frame-guide]` |
 | API, Runway, Volcengine, fal, provider/router surfaces, China-facing surfaces, workflow, pricing, model IDs | `[skill:seedance-pipeline]`, `[ref:api-workflow]`, `[ref:model-name-map]` |
 | Color, ACES, HDR/SDR, aspect ratio, subtitles, audio post, or QC | `[ref:color-pipeline-aces]`, `[ref:aspect-ratio-delivery]`, `[ref:subtitles-localization]`, `[ref:audio-post-delivery]`, `[ref:delivery-qc]` |
-| Genre template or examples | `[skill:seedance-recipes]`, `[ref:examples-by-mode]`, `[ref:genre-guides]` |
+| Genre template, examples, or a worked directing example in a specific genre | `[skill:seedance-recipes]`, `[ref:examples-by-mode]`, `[ref:genre-guides]`, `[ref:directing-engine-genre-library]` |
 | Chinese examples or safe Chinese rewrites | `[skill:seedance-examples-zh]`, `[skill:seedance-vocab-zh]`, `[ref:vocab/zh]` |
 | Japanese examples or safe Japanese rewrites | `[skill:seedance-examples-ja]`, `[skill:seedance-vocab-ja]`, `[ref:vocab/ja]` |
 | Korean examples or safe Korean rewrites | `[skill:seedance-examples-ko]`, `[skill:seedance-vocab-ko]`, `[ref:vocab/ko]` |

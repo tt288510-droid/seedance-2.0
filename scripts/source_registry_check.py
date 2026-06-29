@@ -86,6 +86,31 @@ def main() -> int:
                     if source.get("source_type", "").startswith("community") and source.get("confidence") == "high":
                         warnings.append(f"community source `{source.get('id')}` should rarely be high confidence")
 
+    # Freshness gate: volatile platform references must not drift far behind api-status.md.
+    api_status = root / "references" / "api-status.md"
+    if api_status.exists():
+        anchor_match = re.search(r"^last_verified:\s*(\d{4}-\d{2}-\d{2})$", api_status.read_text(encoding="utf-8"), re.M)
+        anchor = parse_date(anchor_match.group(1)) if anchor_match else None
+        if anchor:
+            freshness_critical = [
+                "platform-surface-matrix.md", "api-workflow.md", "model-name-map.md",
+                "platform-constraints.md", "field-observed-tips.md", "agent-compatibility.md",
+            ]
+            for name in freshness_critical:
+                ref = root / "references" / name
+                if not ref.exists():
+                    continue
+                parsed = [parse_date(d) for d in re.findall(r"\d{4}-\d{2}-\d{2}", ref.read_text(encoding="utf-8"))]
+                parsed = [d for d in parsed if d]
+                if not parsed:
+                    continue
+                drift = (anchor - max(parsed)).days
+                if drift > 30:
+                    errors.append(
+                        f"{name} is {drift} days behind api-status last_verified ({anchor.isoformat()}); "
+                        "re-verify and re-stamp before release"
+                    )
+
     if warnings:
         print("WARNINGS:")
         for warning in warnings:

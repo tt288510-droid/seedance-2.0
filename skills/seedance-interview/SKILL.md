@@ -9,8 +9,8 @@ tags:
   - brief
   - seedance-20
 metadata:
-  version: "6.1.0"
-  updated: "2026-06-22"
+  version: "6.2.0"
+  updated: "2026-06-28"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
   repository: "https://github.com/Emily2040/seedance-2.0"
@@ -38,7 +38,7 @@ This is the front door, and the person walking through it is carrying something 
 
 ## Priority Question Pool
 
-Each plain question secretly decides a production parameter the user never has to know about. Skip every question the idea already answers. Keep the existing limit on unnecessary questioning: at most five questions in one batch.
+Each plain question secretly decides a production parameter the user never has to know about. Skip every question the idea already answers. Keep the existing limit on unnecessary questioning: at most five questions in one batch. Questions 1-5 are the core set for a single clip; questions 6-9 belong to the sequence branch - raise them only when the idea is already a longer story or the user signals a series, part two, continuation, or making it longer. For a plain single-clip idea, assume one clip and do not surface sequence, continuation-source, or cross-clip-lock questions.
 
 | # | Ask (plain) | Secretly decides | Default if unsure |
 |---|---|---|---|
@@ -73,7 +73,7 @@ Translate everyday answers into production language inside the brief - never out
 
 ## Direct the Scene, Don't Decorate It
 
-The feeling answer is not a style label to sprinkle on; it is the input to a directorial decision. Load `[ref:directing-engine]` and run the Director's Read silently on the idea: what is the scene doing (function and turn), whose experience are we in, who holds power, and what is felt but unsaid. From the genre, the chosen feeling, any reference look the user loves, and where it will be watched, set one directorial voice for the whole project and keep it. Then every scene gets a coherent setup - camera, lens, light, blocking, performance, and sound all serving one intention - rather than a generic "cinematic" look. Write the result into the brief in director language; never quiz the user about voice, lenses, or ratios.
+The feeling answer is not a style label to sprinkle on; it is the input to a directorial decision. Run the Director's Read silently on the idea: what is the scene doing (function and turn), whose experience are we in, who holds power, and what is felt but unsaid. From the genre, the chosen feeling, any reference look the user loves, and where it will be watched, set one directorial voice for the whole project and keep it. Then every scene gets a coherent setup - camera, lens, light, blocking, performance, and sound all serving one intention - rather than a generic "cinematic" look. Apply this inline from memory for a single clip; load `[ref:directing-engine]` only when scenes need distinct treatment, one voice must hold across many clips, or the right setup is genuinely unclear. Write the result into the brief in director language; never quiz the user about voice, lenses, or ratios.
 
 When the idea has more than one scene, give each scene its own read and setup but the same voice, and plan how the look should tighten toward the turning point so the finished story feels authored by one hand. Performance is written as one true visible gesture per beat, not as an emotion word.
 
@@ -91,7 +91,7 @@ Reacting to a draft is easier than answering questions: a non-expert says "yes, 
 
 1. Build a safe draft premise immediately from the user input.
 2. Run the priority question pool in one batch, skipping every question the idea already answers.
-3. Identify the genre path: product, lifestyle, drama, music video, landscape, commercial, animation, UGC, or experimental. With `[ref:directing-engine]`, derive one directorial voice from that path plus the chosen feeling, reference look, and surface, and run the Director's Read on each scene to fix its intention and coherent setup.
+3. Identify the genre path: product, lifestyle, drama, music video, landscape, commercial, animation, UGC, or experimental. Derive one directorial voice from that path plus the chosen feeling, reference look, and surface, and run the Director's Read on each scene to fix its intention and coherent setup - apply this inline for a single clip, and load `[ref:directing-engine]` when scenes diverge or a voice must hold across clips.
 4. If the user is a filmmaker, agency, producer, editor, localization team, or client-review owner, load `[ref:pro-filmmaking-standards]` and collect deliverables, territory, aspect ratio, approval owner, rights, and post/delivery needs.
 5. If the idea is a sequence project, load `[skill:seedance-sequence]` and output a full-story mini-treatment, final story outcome, sequence beat map, continuity bible, first clip contract, first clip prompt, provisional future intent cards, and Project State Capsule.
 6. For standalone work, propose the mini-treatment with switchable assumptions, adjust on reaction, end with a concise creative brief, and route to `[skill:seedance-prompt]`, `[skill:seedance-prompt-short]`, or `[skill:seedance-pipeline]`.

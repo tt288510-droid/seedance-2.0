@@ -2,10 +2,10 @@
 
 ## Current Patch
 
-- Active package version: `6.1.0`.
+- Active package version: `6.2.0`.
 - Patch scope: directing engine (motivated scene direction, one directorial voice, long-form look spine) wired across interview, prompt, camera, lighting, motion, characters, sequence, and continuation; carried-forward provider/router, Seedance 2.0 Mini naming, and Runway-source maintenance.
 - Current expected active sub-skills: 28.
-- Current expected eval cases: 114.
+- Current expected eval cases: 121.
 
 ## Baseline
 
@@ -116,11 +116,11 @@ git diff --check
 
 ## Release Acceptance Results
 
-Final full-suite run on 2026-06-22 (v6.1.0 directing-engine release):
+Final full-suite run on 2026-06-28 (v6.2.0 eval-harness release):
 
-- `python scripts/validate_skills.py --strict`: pass; root plus 28 sub-skills and required v6.1.0 files.
+- `python scripts/validate_skills.py --strict`: pass; root plus 28 sub-skills and required v6.2.0 files.
 - `python scripts/content_audit.py --strict`: pass; active content clean, migrated archived warnings remain warning-only.
-- `python scripts/eval_schema_check.py --strict`: pass; 114 eval cases.
+- `python scripts/eval_schema_check.py --strict`: pass; 121 eval cases.
 - `python scripts/design_audit.py --strict`: pass.
 - `python scripts/source_registry_check.py --strict`: pass.
 - `python scripts/vocab_schema_check.py --strict`: pass.

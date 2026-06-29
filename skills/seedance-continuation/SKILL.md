@@ -9,8 +9,8 @@ tags:
   - continuity
   - seedance-20
 metadata:
-  version: "6.1.0"
-  updated: "2026-06-22"
+  version: "6.2.0"
+  updated: "2026-06-28"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
   repository: "https://github.com/Emily2040/seedance-2.0"
@@ -24,6 +24,10 @@ metadata:
 Use this for seamless continuation, intentional next shots, bridge clips, tail repair, and re-anchoring after drift. A continuation prompt must be grounded in accepted footage, not only in the old plan.
 
 Load `[ref:continuation-handoff]`, `[ref:sequence-project-state]`, `[ref:prompt-compiler]`, `[ref:reference-transfer-contract]`, and `[ref:continuity-qc]`. Load `[ref:failure-atlas]` when the continuation failed or drift is visible. Load `[ref:directing-engine]` so the next clip inherits the project's directorial voice and its position on the long-form spine; the look never re-rolls between clips.
+
+## Intent
+
+The user already made something they accepted, and now they are trusting the story to continue from exactly where it really landed - not where the plan hoped it would. The soul of this skill is fidelity to what actually happened: honor the accepted footage as the only truth, refuse to invent the bridge, and ask for the real ending rather than guess it. Continuity is a promise that the film the user already has will not be quietly contradicted.
 
 ## Required Input Gate
 

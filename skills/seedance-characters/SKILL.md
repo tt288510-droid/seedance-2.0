@@ -9,8 +9,8 @@ tags:
   - consistency
   - seedance-20
 metadata:
-  version: "6.1.0"
-  updated: "2026-06-22"
+  version: "6.2.0"
+  updated: "2026-06-28"
   parent: "seedance-20"
   author: "Iamemily2050 (@iamemily2050)"
   repository: "https://github.com/Emily2040/seedance-2.0"
