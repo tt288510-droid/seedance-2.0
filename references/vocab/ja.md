@@ -31,7 +31,7 @@ Use this reference for Japanese Seedance prompt wording, role binding, and compa
 | Lighting | `柔らかい逆光` | soft backlight |
 | Lighting | `左からの暖かいプラクティカルライト` | warm practical light from left |
 | Lighting | `冷たい月明かりの輪郭光` | cool moon rim light |
-| Lighting | `薄い霧を通るボリューム光` | volumetric light through mist |
+| Lighting | `薄い霧を通るボリュームライト` | volumetric light through mist |
 | Lighting | `濡れた路面にネオンが反射する` | wet pavement reflects neon |
 | Motion | `足元の霧が静かに広がる` | fog spreads around the feet |
 | Motion | `水滴が集まり下へ流れる` | droplets merge and slide down |
@@ -104,10 +104,10 @@ Field-observed from 2026 community testing (note.com, Qiita); test per surface, 
 | `エモい` | 感情を生む物理要素で書く：`夕暮れの逆光、長い影、遠くの電車の音` |
 | `雰囲気のある` | 雰囲気を作る要素を名指しする：`薄い霧、濡れた路面の反射、低い環境音` |
 | `美しい` | 色・質感・構図・光の挙動で書く |
-| `壮大な` | 物理的スケールで書く：群衆の人数、レンズの距離、建物の高さ |
+| `壮大な` | 物理的スケールで書く：群衆の人数、被写体との距離、建物の高さ |
 | `高品質 / 高画質 / 8K` | 削除する。解像度は設定であり、文章ではない |
 | `圧倒的な` | 圧倒する一つの対比か種明かし（リビール）を書く |
-| `幻想的な`（単独） | 幻想を作る要素を書く：`漂う塵、ボリューム光、ゆっくりした浮遊` |
+| `幻想的な`（単独） | 幻想を作る要素を書く：`漂う塵、ボリュームライト、ゆっくりした浮遊` |
 | `神作画` | 動きで書く：`滑らかなフルアニメーションの一連の動き、そのあと静止` |
 | `かっこいい` | 具体的なポーズ・動き・カメラで書く |
 | `ダイナミック` | 動きの種類・速度・終点で書く |

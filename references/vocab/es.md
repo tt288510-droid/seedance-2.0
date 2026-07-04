@@ -77,7 +77,7 @@ Consenso de la comunidad: los adjetivos de calidad abstractos desestabilizan la 
 | Muletilla | Escribe en su lugar |
 |---|---|
 | `cinematográfico` | escala de plano, movimiento de cámara, fuente de luz y etalonaje: `plano general amplio, travelling lento, sol bajo, tonos teal y naranja` |
-| `épico` | escala física: tamaño de la multitud, distancia del objetivo, altura de la estructura |
+| `épico` | escala física: tamaño de la multitud, distancia a la cámara, altura de la estructura |
 | `impresionante / asombroso` | el único contraste o revelación visible que lo justifica |
 | `hermoso / precioso` | color, textura, material, comportamiento de la luz |
 | `obra maestra / alta calidad / 8K` | eliminar; la calidad no se pide y la resolución es un ajuste |
