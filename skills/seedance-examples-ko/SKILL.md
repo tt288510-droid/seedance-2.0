@@ -37,15 +37,15 @@ Korean examples should turn 감성 into production behavior: the feeling is carr
 
 ## Safe Example Patterns
 
-**Product I2V:** `[Image1]은 제품 참조이며 로고, 라벨, 병 모양, 색상을 정확히 유지한다. 변화는 작은 물방울이 표면을 따라 내려가는 움직임과 왼쪽에서 지나가는 따뜻한 실용 조명만 적용한다. Camera: locked product close-up, slow push-in. Sound: 낮은 실내 환경음, 마지막에 작은 유리 소리.`
+**Product I2V:** `[Image1]은 제품 참조이며 로고, 라벨, 병 모양, 색상을 정확히 유지한다. 변화는 작은 물방울이 표면을 따라 내려가는 움직임과 왼쪽에서 지나가는 따뜻한 프랙티컬 조명만 적용한다. Camera: locked product close-up, slow push-in. Sound: 낮은 실내 환경음, 마지막에 작은 유리 소리.`
 
 **Melodrama micro-expression:** `현대 아파트 주방, 두 명의 original adult characters only. Character A lowers a ceramic mug and looks away; Character B stays near the window, no approach. Camera: locked medium-wide, subtle handheld breathing sway. Lighting: warm tungsten practical, faint blue city spill. Sound: refrigerator hum, fabric movement, no music.`
 
 **Sequence clip 01:** `오리지널 인물A가 새벽 버스 정류장에 도착한다. 이번 클립의 역할은 기다림의 이유를 암시하는 것뿐이다. A는 접힌 메모를 발견하고 손을 뻗기 직전에 멈춘다. Camera: stable lateral tracking, medium-wide. 이 클립에서는 만남이나 버스 출발을 보여주지 않는다.`
 
-**Continuation:** `이전 승인된 클립의 끝 상태에서 이어진다. A는 메모 앞에서 멈춘 상태로 시작하고, 천천히 메모를 집어 들고 멀리 들리는 안내음에 고개를 든다. 이전의 도착 동작은 반복하지 않는다. Camera: locked medium shot, slight push-in.`
+**Continuation:** `이전 승인된 클립의 끝 상태에서 이어진다. A는 메모 앞에서 멈춘 상태로 시작하고, 천천히 메모를 집어 들고 멀리서 들리는 안내음에 고개를 든다. 이전의 도착 동작은 반복하지 않는다. Camera: locked medium shot, slight push-in.`
 
-**Dialogue:** `Character A sits at a cafe table, locked medium close-up, shoulders still. She says, "괜찮아, 천천히 말해." 대사 중에는 머리 회전을 피하고 작은 입 움직임만 사용한다. Sound: clear short dialogue, soft cafe room tone, no music under the line.`
+**Dialogue:** `Character A sits at a cafe table, locked medium close-up, shoulders still. She says, "괜찮아, 천천히 말해." 대사 중에는 고개를 돌리지 않고 작은 입 움직임만 사용한다. Sound: clear short dialogue, soft cafe room tone, no music under the line.`
 
 **Textless localization:** `9:16 한국어 SNS 컷다운. 제품은 중앙에 유지하고 가장자리에는 중요한 동작을 두지 않는다. 생성 자막, 워터마크, 광고 문구를 화면 안에 넣지 않는다. Post note: 한국어 자막, 법적 문구, CTA는 편집에서 추가한다.`
 

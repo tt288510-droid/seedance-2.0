@@ -17,19 +17,19 @@ Use this reference for Korean Seedance prompt wording, role binding, and compact
 | Camera | `느린 돌리 인` | slow push-in |
 | Camera | `뒤로 빠지며 공간을 드러내는 샷` | pull back to reveal space |
 | Camera | `안정적인 측면 트래킹` | stable lateral tracking |
-| Camera | `고정된 중간 샷` | locked medium shot |
+| Camera | `고정된 미디엄 샷` | locked medium shot |
 | Camera | `매크로 클로즈업` | macro close-up |
-| Camera | `낮은 앵글` | low-angle shot |
+| Camera | `로우 앵글` | low-angle shot |
 | Camera | `어깨 너머 샷` | over-the-shoulder shot |
 | Camera | `가벼운 핸드헬드 호흡감` | handheld shot with slight breathing sway |
-| Shot | `중간 클로즈업` | medium close-up |
+| Shot | `미디엄 클로즈업` | medium close-up |
 | Shot | `넓은 설정 샷` | wide establishing shot |
 | Shot | `3/4 측면 얼굴` | three-quarter profile |
 | Lens | `24mm 광각으로 공간감 강조` | 24mm wide spatial feel |
 | Lens | `50mm 자연스러운 인물감` | 50mm natural portrait feel |
 | Lens | `매크로 렌즈로 재질 디테일 강조` | macro lens for material detail |
 | Lighting | `부드러운 역광` | soft backlight |
-| Lighting | `왼쪽의 따뜻한 실용 조명` | warm practical light from left |
+| Lighting | `왼쪽의 따뜻한 프랙티컬 조명` | warm practical light from left |
 | Lighting | `차가운 달빛 림 라이트` | cool moon rim light |
 | Lighting | `얇은 안개를 지나는 볼류메트릭 라이트` | volumetric light through mist |
 | Lighting | `젖은 노면에 네온이 반사된다` | wet pavement reflects neon |
@@ -57,7 +57,7 @@ Use this reference for Korean Seedance prompt wording, role binding, and compact
 
 ## Compact Template
 
-`[Image1]은 참조이며 [주체/제품/얼굴/로고]를 정확히 유지한다. 변화는 [동작/조명/카메라]만 적용한다. 카메라: [한 가지 움직임]. 사운드: [음향 지시].`
+`[Image1]은 참조이며 [피사체/제품/얼굴/로고]를 정확히 유지한다. 변화는 [동작/조명/카메라]만 적용한다. 카메라: [한 가지 움직임]. 사운드: [음향 지시].`
 
 ## Multimodal Template
 
@@ -70,7 +70,7 @@ Use these when the Korean prompt is part of a v6 sequence project, continuation,
 | Function | Korean | English meaning |
 |---|---|---|
 | Role | `승인된 영상을 프로젝트의 기준으로 삼는다` | accepted footage is the project truth |
-| Role | `이전 실제 끝 상태에서 이어진다` | continue from the actual previous ending |
+| Role | `이전 클립의 실제 끝 상태에서 이어진다` | continue from the actual previous ending |
 | Role | `이전 동작을 반복하지 않는다` | do not replay the previous action |
 | Role | `이번 클립은 현재 작업만 보여준다` | this clip shows only the current task |
 | Role | `뒤의 전개는 아직 보여주지 않는다` | future story beats do not appear yet |
@@ -99,7 +99,7 @@ Field-observed and under-tested as of 2026; test per surface, never promise resu
 
 | 상투어 | 바꿔 쓰기 |
 |---|---|
-| `영화같은 / 시네마틱한` | 샷 크기·카메라 움직임·광원·색보정으로 쓴다: `넓은 설정 샷, 느린 돌리 인, 낮은 노을빛, 틸앤오렌지` |
+| `영화 같은 / 시네마틱한` | 샷 크기·카메라 움직임·광원·색보정으로 쓴다: `넓은 설정 샷, 느린 돌리 인, 낮은 노을빛, 틸 앤 오렌지` |
 | `감성적인 / 감성` | 감성을 만드는 물리 요소로 쓴다: `해질녘 역광, 긴 그림자, 멀리서 들리는 기차 소리` |
 | `분위기 있는` | 분위기를 만드는 요소를 지목한다: `얇은 안개, 젖은 노면 반사, 낮은 환경음` |
 | `아름다운` | 색·질감·구도·빛의 움직임으로 쓴다 |

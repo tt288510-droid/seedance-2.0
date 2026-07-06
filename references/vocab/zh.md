@@ -7,7 +7,7 @@ Use this reference for Chinese Seedance prompt wording, role binding, and compac
 | Role | `@图1 为首帧` | Image 1 is the first frame |
 | Role | `@图2 为尾帧` | Image 2 is the last frame |
 | Role | `@图1 锁定主体身份` | Image 1 locks subject identity |
-| Role | `@图2 参考场景氛围` | Image 2 provides scene mood only |
+| Role | `@图2 仅参考场景氛围` | Image 2 provides scene mood only |
 | Role | `@视频1 仅参考运镜` | Video 1 provides camera movement only |
 | Role | `@视频1 参考动作节奏` | Video 1 provides action rhythm |
 | Role | `@音频1 参考节奏和氛围` | Audio 1 provides tempo and mood |
@@ -16,7 +16,7 @@ Use this reference for Chinese Seedance prompt wording, role binding, and compac
 | FirstLastFrame | `中间动作连续，不跳切` | continuous in-between motion, no jump cut |
 | FirstLastFrame | `以尾帧为最终画面目标` | use final frame as the target image |
 | Camera | `缓慢推镜` | slow push-in |
-| Camera | `后退揭示镜头` | pull back to reveal the space |
+| Camera | `镜头后拉揭示空间` | pull back to reveal the space |
 | Camera | `横向稳定跟拍` | stable lateral tracking |
 | Camera | `轨道平移` | slider / dolly lateral move |
 | Camera | `固定中景` | locked medium shot |
@@ -27,7 +27,7 @@ Use this reference for Chinese Seedance prompt wording, role binding, and compac
 | Camera | `弧形绕摄` | arc orbit shot |
 | Camera | `手持镜头，轻微呼吸晃动` | handheld shot with slight breathing sway |
 | Shot | `中近景` | medium close-up |
-| Shot | `宽幅远景` | wide establishing shot |
+| Shot | `远景定场镜头` | wide establishing shot |
 | Shot | `四分之三侧脸` | three-quarter profile |
 | Lens | `长焦压缩空间` | telephoto compression |
 | Lens | `广角空间感` | wide-angle spatial feel |
@@ -37,7 +37,7 @@ Use this reference for Chinese Seedance prompt wording, role binding, and compac
 | Lighting | `左侧暖色实用灯` | warm practical light from left |
 | Lighting | `冷色月光轮廓光` | cool moon rim light |
 | Lighting | `体积光穿过薄雾` | volumetric light through mist |
-| Lighting | `湿地反射霓虹` | wet ground reflects neon |
+| Lighting | `潮湿地面反射霓虹` | wet ground reflects neon |
 | Motion | `脚步带动薄雾扩散` | footsteps disturb fog |
 | Motion | `水珠聚合后沿表面下滑` | droplets merge and slide down |
 | Motion | `缓慢转头并停住` | slow head turn and stop |
@@ -66,7 +66,7 @@ Use this reference for Chinese Seedance prompt wording, role binding, and compac
 
 ## Timeline Template
 
-社区常用的长提示词骨架（即梦/Dreamina 表面，约 8 秒以上时使用；field-observed）。保持 `[Image1]` 等引用标签不变：
+社区常用的长提示词骨架（即梦/Dreamina 平台，约 8 秒以上时使用；field-observed）。保持 `[Image1]` 等引用标签不变：
 
 ```
 【风格】[媒介、质感、色调，一句话]
@@ -103,17 +103,17 @@ Use these when the Chinese prompt is part of a v6 sequence project, continuation
 Field-observed from 2026 community testing (即梦官方手册解读、知乎、36氪实测); test per surface, never promise results. Mandarin has the strongest lip-sync, yet hands-on tests still report 语音错乱 / 字幕乱码 - budget retakes.
 
 - 台词格式：角色名 + 动作 + 冒号 + 引号内台词。Count characters/syllables, not "words"; keep to one short clause.
-- 唇形同步在部分界面默认关闭（如即梦需勾选"启用唇形同步"）- confirm it is enabled before blaming the prompt.
-- Inline audio tags are field-reported on some surfaces: 在台词末尾加方括号提示音色与音效，例如 `"领旨" [低沉男声][编钟余震]`。Surface-specific; verify before relying on it.
+- 唇形同步在部分界面默认关闭（如即梦需勾选“启用唇形同步”）- confirm it is enabled before blaming the prompt.
+- Inline audio tags are field-reported on some surfaces: 在台词末尾加方括号提示音色与音效，例如 `"领旨" [低沉男声][编钟余音]`。Surface-specific; verify before relying on it.
 
 ## Slop Traps
 
-社区共识：抽象的"感觉词"会让模型无法判断该强调哪个元素。把感觉词拆解成制造这种感觉的物理元素——材质、光线、色彩、空气——画面立即变稳。
+社区共识：抽象的“感觉词”会让模型无法判断该强调哪个元素。把感觉词拆解成制造这种感觉的物理元素——材质、光线、色彩、空气——画面立即变稳。
 
 | 套话 | 改写为 |
 |---|---|
 | `电影感` | 写出景别、运镜、光源和调色：`宽幅远景，缓慢推镜，低角度暖阳，低饱和青橙调` |
-| `氛围感` | 写出制造氛围的物理元素：`薄雾、逆光轮廓、湿地反光、低环境声` |
+| `氛围感` | 写出制造氛围的物理元素：`薄雾、逆光轮廓、湿润地面反光、低环境声` |
 | `高级感` | 写出光线与材质行为：`柔和侧光、受控反光、干净背景、金属拉丝纹理` |
 | `大片感` | 写出物理规模：人群数量、镜头距离、建筑高度 |
 | `质感`（单独使用） | 指明哪种质感：`磨砂玻璃、丝绒吸光、纸张纤维` |

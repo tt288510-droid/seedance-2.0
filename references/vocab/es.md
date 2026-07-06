@@ -15,7 +15,7 @@ Use this reference for Spanish Seedance prompt wording, role binding, and compac
 | FirstLastFrame | `movimiento continuo sin salto de montaje` | continuous motion, no jump cut |
 | FirstLastFrame | `mantener el mismo personaje, vestuario y espacio` | preserve same character, wardrobe, and layout |
 | Camera | `travelling de acercamiento lento` | slow push-in |
-| Camera | `retroceso para revelar el espacio` | pull back to reveal space |
+| Camera | `travelling de retroceso para revelar el espacio` | pull back to reveal space |
 | Camera | `seguimiento lateral estable` | stable lateral tracking |
 | Camera | `plano medio fijo` | locked medium shot |
 | Camera | `primer plano macro` | macro close-up |
@@ -30,7 +30,7 @@ Use this reference for Spanish Seedance prompt wording, role binding, and compac
 | Lens | `lente macro para detalle de material` | macro lens for material detail |
 | Lighting | `contraluz suave` | soft backlight |
 | Lighting | `luz cálida práctica desde la izquierda` | warm practical light from left |
-| Lighting | `halo frío de luna` | cool moon rim light |
+| Lighting | `luz de contorno fría de luna` | cool moon rim light |
 | Lighting | `luz volumétrica atravesando niebla fina` | volumetric light through mist |
 | Lighting | `asfalto mojado reflejando neón` | wet pavement reflects neon |
 | Motion | `la niebla se dispersa alrededor de los pasos` | fog spreads around footsteps |
@@ -43,7 +43,7 @@ Use this reference for Spanish Seedance prompt wording, role binding, and compac
 | Audio | `una frase corta y clara` | one short clear spoken line |
 | Audio | `sin música, solo ambiente bajo` | no music, low ambience only |
 | Audio | `cámara fija durante el diálogo` | locked camera during dialogue |
-| Audio | `los pasos caen en el pulso` | footsteps hit the beat |
+| Audio | `los pasos siguen el pulso` | footsteps hit the beat |
 | Text | `sin subtítulos, marcas de agua ni texto adicional` | no subtitles, watermarks, or extra text |
 | Editing | `continuar el plano` | continue the shot |
 | Editing | `extender cinco segundos` | extend by five seconds |
@@ -77,12 +77,12 @@ Consenso de la comunidad: los adjetivos de calidad abstractos desestabilizan la 
 | Muletilla | Escribe en su lugar |
 |---|---|
 | `cinematográfico` | escala de plano, movimiento de cámara, fuente de luz y etalonaje: `plano general amplio, travelling lento, sol bajo, tonos teal y naranja` |
-| `épico` | escala física: tamaño de la multitud, distancia del objetivo, altura de la estructura |
+| `épico` | escala física: tamaño de la multitud, distancia a la cámara, altura de la estructura |
 | `impresionante / asombroso` | el único contraste o revelación visible que lo justifica |
 | `hermoso / precioso` | color, textura, material, comportamiento de la luz |
 | `obra maestra / alta calidad / 8K` | eliminar; la calidad no se pide y la resolución es un ajuste |
 | `espectacular` | el momento concreto: qué se mueve, qué se revela |
-| `dramático` | bloqueo, sombra, silencio o presión de cámara |
+| `dramático` | puesta en escena, sombra, silencio o presión de cámara |
 | `mágico` | comportamiento de partículas, fuente del brillo, trayectoria |
 | `de ensueño` (solo) | qué lo hace onírico: `bruma fina, luz volumétrica, flotación lenta` |
 | `dinámico` | el movimiento concreto, su velocidad y su punto final |

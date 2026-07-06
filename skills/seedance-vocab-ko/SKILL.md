@@ -32,8 +32,8 @@ Translate the production intention rather than every English word. Keep the Kore
 
 | Function | Korean wording |
 |---|---|
-| Camera | `천천히 돌리 인`, `측면 트래킹 샷`, `고정된 중간 샷`, `로우 앵글`, `클로즈업` |
-| Lighting | `역광`, `부드러운 창문 빛`, `따뜻한 실용 조명`, `차가운 달빛`, `림 라이트` |
+| Camera | `느린 돌리 인`, `측면 트래킹 샷`, `고정된 미디엄 샷`, `로우 앵글`, `클로즈업` |
+| Lighting | `역광`, `부드러운 창문 빛`, `따뜻한 프랙티컬 조명`, `차가운 달빛`, `림 라이트` |
 | Motion | `천천히 돌아선다`, `프레임을 빠르게 가로지른다`, `물방울이 아래로 흐른다`, `연기가 얇게 퍼진다` |
 | Audio | `조용한 환경음`, `짧은 대사`, `부드러운 금속음`, `음악 없음` |
 | Constraints | `로고, 라벨, 형태를 정확히 유지한다` |
@@ -44,7 +44,7 @@ Translate the production intention rather than every English word. Keep the Kore
 
 ## De-Slop Rule
 
-When the prompt leans on `영화같은`, `감성적인`, `분위기 있는`, `웅장한`, or `고퀄리티`, load the Slop Traps table in `references/vocab/ko.md` and decompose each into the physical elements that produce it - 카메라 동사+속도+시점, 광원+방향+행동.
+When the prompt leans on `영화 같은`, `감성적인`, `분위기 있는`, `웅장한`, or `고퀄리티`, load the Slop Traps table in `references/vocab/ko.md` and decompose each into the physical elements that produce it - 카메라 동사+속도+시점, 광원+방향+행동.
 
 ## Output Contract
 

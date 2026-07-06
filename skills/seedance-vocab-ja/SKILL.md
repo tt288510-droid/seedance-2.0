@@ -33,7 +33,7 @@ Prefer concise production Japanese over literal translation. Keep the structure 
 | Function | Japanese wording |
 |---|---|
 | Camera | `ゆっくりドリーイン`, `横移動のトラッキング`, `固定の中景`, `低いアングル`, `クローズアップ` |
-| Lighting | `逆光`, `柔らかい窓光`, `暖かい実用照明`, `冷たい月明かり`, `輪郭光` |
+| Lighting | `逆光`, `柔らかい窓光`, `暖かいプラクティカルライト`, `冷たい月明かり`, `輪郭光` |
 | Motion | `ゆっくり振り返る`, `画面を素早く横切る`, `水滴が下へ流れる`, `煙が薄く広がる` |
 | Audio | `静かな環境音`, `短い台詞`, `金属音`, `音楽なし` |
 | Constraints | `ロゴ、ラベル、形状を正確に維持する` |

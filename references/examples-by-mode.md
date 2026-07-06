@@ -76,7 +76,7 @@ These examples are original structures distilled from public multilingual practi
 
 ### Russian Safe Suspense
 
-`Постановочная сцена напряжения без графики: взрослый оригинальный персонаж отступает от закрытой двери, роняет ключи и замирает. Camera: locked medium shot. Lighting: warm practical plus blue window rim. Sound: key drop, breath, no music.`
+`Постановочная сцена напряжения без натуралистичных деталей: взрослый оригинальный персонаж отступает от закрытой двери, роняет ключи и замирает. Camera: locked medium shot. Lighting: warm practical plus blue window rim. Sound: key drop, breath, no music.`
 
 ## Sequence Continuation Example
 

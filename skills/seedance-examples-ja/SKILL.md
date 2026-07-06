@@ -41,7 +41,7 @@ Japanese examples should feel like production notes a Japanese creator could act
 
 **Portrait micro-performance:** `[Image1]の人物の顔、髪型、衣装、背景構図を保持。動きは小さく、一度まばたきし、視線を少し下げ、最後に控えめに微笑む。Camera: locked medium close-up, no reframing. Lighting: soft window light from frame right. Sound: quiet room tone.`
 
-**Sequence clip 01:** `オリジナル人物Aが夜明けの駅ホームに入ってくる。目的は「誰かを待つ」と分かる最初の手がかりだけを見せる。Aは濡れた床を二歩歩き、折りたたまれた切符を見つけて拾わずに止まる。Camera: stable lateral tracking, medium-wide. このクリップでは列車到着や再会は見せない。`
+**Sequence clip 01:** `オリジナル人物Aが夜明けの駅ホームに入ってくる。「誰かを待つ」という目的が分かる最初の手がかりだけを見せる。Aは濡れた床を二歩歩き、折りたたまれた切符を見つけて拾わずに止まる。Camera: stable lateral tracking, medium-wide. このクリップでは列車到着や再会は見せない。`
 
 **Continuation:** `前の採用済みクリップの終点から続ける。Aは切符の二歩手前で止まっている状態から開始し、ゆっくりしゃがんで切符を拾い、遠くのアナウンスに反応して顔を上げる。前の入場動作を繰り返さない。Camera: locked medium shot, slight push-in.`
 

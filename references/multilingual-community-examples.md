@@ -107,7 +107,7 @@ Native Korean readers should separate subject lock, camera movement, lighting, a
 
 **Safe staged tension**
 
-`Постановочная напряженная сцена без графики: взрослый оригинальный персонаж отступает от закрытой двери, роняет ключи, затем замирает. Camera: locked medium shot. Lighting: low warm practical plus blue window rim. Sound: key drop, breath, no music.`
+`Постановочная напряженная сцена без натуралистичных деталей: взрослый оригинальный персонаж отступает от закрытой двери, роняет ключи, затем замирает. Camera: locked medium shot. Lighting: low warm practical plus blue window rim. Sound: key drop, breath, no music.`
 
 ## Multilingual Prompt Triage
 
@@ -134,7 +134,7 @@ Use these when the collaborator is not only prompting, but preparing a shot for 
 
 ### Chinese-English client shot
 
-`S01_SH02: @图1锁定产品logo、标签、瓶身比例；@视频1仅参考 slow slider rhythm，不复制环境。产品在黑色亚克力台面上，暖色条形光扫过瓶身，最后停在正三分之二角度。Camera: locked macro-to-medium push-in. Post: no generated text; add Chinese/English campaign copy in edit.`
+`S01_SH02: @图1锁定产品logo、标签、瓶身比例；@视频1仅参考 slow slider rhythm，不复制环境。产品在黑色亚克力台面上，暖色条形光扫过瓶身，最后停在正面四分之三角度。Camera: locked macro-to-medium push-in. Post: no generated text; add Chinese/English campaign copy in edit.`
 
 ### Japanese localization handoff
 
@@ -150,4 +150,4 @@ Use these when the collaborator is not only prompting, but preparing a shot for 
 
 ### Russian QC handoff
 
-`[Image1] сохраняет оригинального персонажа и костюм; [Audio1] задает только темп. Камера фиксированная, средний план, один короткий жест. Post/QC: отдельные русские субтитры, textless version, проверить синхрон губ и отсутствие изменения лица.`
+`[Image1] сохраняет оригинального персонажа и костюм; [Audio1] задает только темп. Камера фиксированная, средний план, один короткий жест. Post/QC: отдельные русские субтитры, textless version, проверить липсинк и отсутствие изменений лица.`

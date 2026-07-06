@@ -33,7 +33,7 @@ Translate production meaning, not word-for-word English. Keep the prompt concret
 | Function | Spanish wording |
 |---|---|
 | Camera | `travelling de acercamiento`, `plano medio`, `primer plano`, `seguimiento lateral`, `cámara fija` |
-| Lighting | `contraluz`, `luz suave de ventana`, `luz práctica cálida`, `sombra marcada`, `halo frío de luna` |
+| Lighting | `contraluz`, `luz suave de ventana`, `luz práctica cálida`, `sombra marcada`, `luz de contorno fría de luna` |
 | Motion | `gira lentamente`, `cruza rápido el encuadre`, `avanza con estabilidad`, `las gotas se deslizan` |
 | Audio | `sonido ambiente`, `diálogo claro`, `golpe metálico suave`, `sin música` |
 | Constraints | `mantener el logotipo, la etiqueta y la forma sin cambios` |
